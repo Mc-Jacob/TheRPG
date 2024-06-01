@@ -1,0 +1,11 @@
+/Users/jacobmcmullen/RiderProjects/TheRPG/TheRPG.Core/bin/Debug/net8.0/TheRPG.Core.deps.json
+/Users/jacobmcmullen/RiderProjects/TheRPG/TheRPG.Core/bin/Debug/net8.0/TheRPG.Core.dll
+/Users/jacobmcmullen/RiderProjects/TheRPG/TheRPG.Core/bin/Debug/net8.0/TheRPG.Core.pdb
+/Users/jacobmcmullen/RiderProjects/TheRPG/TheRPG.Core/obj/Debug/net8.0/TheRPG.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jacobmcmullen/RiderProjects/TheRPG/TheRPG.Core/obj/Debug/net8.0/TheRPG.Core.AssemblyInfoInputs.cache
+/Users/jacobmcmullen/RiderProjects/TheRPG/TheRPG.Core/obj/Debug/net8.0/TheRPG.Core.AssemblyInfo.cs
+/Users/jacobmcmullen/RiderProjects/TheRPG/TheRPG.Core/obj/Debug/net8.0/TheRPG.Core.csproj.CoreCompileInputs.cache
+/Users/jacobmcmullen/RiderProjects/TheRPG/TheRPG.Core/obj/Debug/net8.0/TheRPG.Core.dll
+/Users/jacobmcmullen/RiderProjects/TheRPG/TheRPG.Core/obj/Debug/net8.0/refint/TheRPG.Core.dll
+/Users/jacobmcmullen/RiderProjects/TheRPG/TheRPG.Core/obj/Debug/net8.0/TheRPG.Core.pdb
+/Users/jacobmcmullen/RiderProjects/TheRPG/TheRPG.Core/obj/Debug/net8.0/ref/TheRPG.Core.dll

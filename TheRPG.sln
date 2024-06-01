@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheRPG.Web", "TheRPG.Web\TheRPG.Web.csproj", "{1C61F6C6-0A8C-4964-AE0D-0962319FF011}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheRPG.Core", "TheRPG.Core\TheRPG.Core.csproj", "{EC0456F6-AD1C-4890-B4FC-DAE8A0A3D3DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C61F6C6-0A8C-4964-AE0D-0962319FF011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C61F6C6-0A8C-4964-AE0D-0962319FF011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C61F6C6-0A8C-4964-AE0D-0962319FF011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C61F6C6-0A8C-4964-AE0D-0962319FF011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC0456F6-AD1C-4890-B4FC-DAE8A0A3D3DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0456F6-AD1C-4890-B4FC-DAE8A0A3D3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0456F6-AD1C-4890-B4FC-DAE8A0A3D3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0456F6-AD1C-4890-B4FC-DAE8A0A3D3DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
