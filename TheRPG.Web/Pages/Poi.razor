@@ -1,0 +1,16 @@
+@page "/poi"
+@inherits ComponentBase
+
+<PoiComponent PointOfInterest="TreasureChest"/>
+@if (_pointOfInterests.Count > 0)
+{
+    var counter = 1;
+    foreach (var poi in _pointOfInterests)
+        {
+            <br />
+            @counter <b> : @poi?.Detail</b>
+            counter++;
+        }
+    
+}
+
