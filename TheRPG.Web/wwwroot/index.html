@@ -8,8 +8,10 @@
     <base href="/" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/hexagon.css"/>
     <link rel="icon" type="image/png" href="favicon.png" />
-    <link href="TheRPG.Web.styles.css" rel="stylesheet" />
+    <link href="TheRPG.Web.styles.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -29,22 +31,34 @@
     <script src="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
     <script>
+        const a = 2 * Math.PI / 6;
+        const r = 20;
         window.canvasInterop = {
             setupCanvas: function () {
-                
+                var width = 1280;
+                var height = 720;
                 var canvas = document.getElementById("myCanvas");
                 var context = canvas.getContext("2d");
-                canvas.width = 1280;
-                canvas.height = 720;
-                // Perform various operations on the canvas using the context object 
-                // Example: Draw a rectangle 
-                //context.fillStyle = "red";
-                context.beginPath();
-                context.rect(5,5, 1200, 700);
-                context.stroke();
+                canvas.width = width;
+                canvas.height = height;
+           
                // context.fillRect(10, 10, 100, 100);
+                for (let y = r; y + r * Math.sin(a) < height; y += r * Math.sin(a)) {
+                    for (let x = r, j = 0; x + r * (1 + Math.cos(a)) < width; x += r * (1 + Math.cos(a)), y += (-1) ** j++ * r * Math.sin(a)) {
+                        drawHexagon(x, y, context);
+                    }
+                }
             }
         };
+
+        function drawHexagon(x, y, context) {
+            context.beginPath();
+            for (var i = 0; i < 6; i++) {
+                context.lineTo(x + r * Math.cos(a * i), y + r * Math.sin(a * i));
+            }
+            context.closePath();
+            context.stroke();
+        }
     </script>
 </body>
 
