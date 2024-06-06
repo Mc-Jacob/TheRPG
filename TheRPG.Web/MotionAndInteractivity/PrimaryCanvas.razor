@@ -1,3 +1,7 @@
 <h1>Canvas Demo</h1>
-<canvas id="myCanvas"></canvas>
+<canvas id="primaryCanvas"></canvas>
+<button @onclick="() => MovePlayer(Direction.Left)">Left</button>
+<button @onclick="() => MovePlayer(Direction.Right)">Right</button>
+<button @onclick="() => MovePlayer(Direction.Up)">Up</button>
+<button @onclick="() => MovePlayer(Direction.Down)">Down</button>
 
