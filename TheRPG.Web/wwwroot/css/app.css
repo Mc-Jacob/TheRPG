@@ -101,3 +101,14 @@ a, .btn-link {
 code {
     color: #c02d76;
 }
+
+.hexagon {
+    height: 200px;
+    width: 120px;
+    background: red;
+    position:relative;
+    left:50px;
+    box-sizing: border-box;
+}
+
+
