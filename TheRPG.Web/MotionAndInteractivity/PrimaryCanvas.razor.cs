@@ -1,4 +1,6 @@
+using System.Collections.Specialized;
 using System.Timers;
+using Microsoft.AspNetCore.Components.Web;
 using Timer = System.Timers.Timer;
 
 namespace TheRPG.Web.MotionAndInteractivity;
@@ -6,6 +8,7 @@ namespace TheRPG.Web.MotionAndInteractivity;
 public partial class PrimaryCanvas : ComponentBase
 {
     private readonly int _moveDistance = 10;
+    private ElementReference _divElement;
     enum Direction
     {
         Left,
@@ -51,6 +54,8 @@ public partial class PrimaryCanvas : ComponentBase
             case Direction.Up:
                 playerY -= _moveDistance;
                 break;
+            default:
+                break;
         }
     }
 
@@ -58,4 +63,6 @@ public partial class PrimaryCanvas : ComponentBase
     {
         await JsRuntime!.InvokeVoidAsync("drawPlayer", [playerX, playerY]);
     }
+    
+    
 }
