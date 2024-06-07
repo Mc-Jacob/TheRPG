@@ -1,14 +1,34 @@
-<h3>@PointOfInterest.Introduction</h3>
+<h3>Point of Interests</h3>
 <br/>
-<i>
-    <b>@PointOfInterest.Detail</b>
-</i>
-<br/>
-<ol>
-    @{
-        foreach (var option in PointOfInterest.Options)
-        {
-            <li>@option</li>
+<div class="row">
+    <div class="col-3 mh-100">
+        <select name="Pois" size="@_pois.Count" @onchange="OnPoiChange">
+            @{
+                foreach (var poi in _pois)
+                {
+                    <option value="@poi.Introduction">@poi.Introduction</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col-9">
+        <b>Introduction: </b> @_selectedPoiValue?.Introduction
+        <br/>
+        <b>Detail: </b> @_selectedPoiValue?.Detail
+        <br/>
+        <b>Options: </b>
+        @{
+            if (_selectedPoiValue is not null)
+            {
+                var count = 0;
+                @foreach (var option in _selectedPoiValue?.Options!)
+                {
+                    <br/>
+                    count++;
+                    <i>@count: @option</i>
+                }
+            }
         }
-    }
-</ol>
+    </div>
+
+</div>
