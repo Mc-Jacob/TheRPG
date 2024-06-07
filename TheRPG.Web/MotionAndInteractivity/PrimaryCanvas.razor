@@ -1,11 +1,7 @@
 <h1>Canvas Demo</h1>
 <canvas id="primaryCanvas"></canvas>
 
-<div 
-    @* class="jumbotron" *@
-    @* @onkeydown="@KeyDown" *@
-    @* tabindex="0" *@
-    @* @ref="_divElement"*@ >
+<div>
     <button @onclick="() => MovePlayer(Direction.Left)">Left</button>
     <button @onclick="() => MovePlayer(Direction.Right)">Right</button>
     <button @onclick="() => MovePlayer(Direction.Up)">Up</button>
