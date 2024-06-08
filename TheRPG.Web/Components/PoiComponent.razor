@@ -25,10 +25,17 @@
                 {
                     <br/>
                     count++;
-                    <i>@count: @option</i>
+                    <i>@count:<button @onclick="() => ActivateOptionSelection(option)">@option.Brief</button> <br/>
+                        @option.Detail</i>
                 }
             }
         }
     </div>
+    @{
+        if (_optionResponse is not null)
+        {
+            @_optionResponse.ResultVerbage
+        }
+    }
 
 </div>
