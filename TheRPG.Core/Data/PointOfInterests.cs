@@ -1,5 +1,6 @@
 using System.Linq.Expressions;
 using System.Reflection;
+using TheRPG.Core.Data.OptionClasses;
 
 namespace TheRPG.Core.Data;
 
@@ -9,14 +10,14 @@ public static class PointOfInterests
     {
         Introduction = "You notice a locked chest",
         Detail = "There is a treasure chest ordained with intricate runes and stuff blah blah...",
-        Options = ["Option 1", "Option 2", "Option 3"]
+        Options = [Options.OptionADemo, Options.OptionADemo, Options.OptionADemo]
     };
-
-    public static readonly PointOfInterest JustATest = new()
+    
+    public static readonly PointOfInterest Ruins = new()
     {
-        Introduction = "You notice a Test",
-        Detail = "There is a test ordained with intricate runes and stuff blah blah...",
-        Options = ["Option 1", "Option 2", "Option 3"]
+        Introduction = "You notice ruins in the distance",
+        Detail = "This is detail about the ruins such as architecture, age, vegetation, smells, etc...",
+        Options = [Options.OptionADemo, Options.OptionADemo, Options.OptionADemo]
     };
 
     public static List<PointOfInterest?> GetAllPoIs()
